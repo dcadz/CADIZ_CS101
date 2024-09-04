@@ -31,7 +31,7 @@ library("MASS")
 fractions(reciprocal)
 ```
 
-- Write the R code and its output
+Write the R code and its output
 age <- 1/age
 ```{r}
 reciprocal <-1 / age
