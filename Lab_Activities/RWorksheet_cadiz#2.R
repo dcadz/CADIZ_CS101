@@ -18,7 +18,7 @@ print(num_vector)
 #Write the R script and its output. Describe the output.
 nseq <- seq(1,3, by=0.2)
 print(nseq)
-# The output shows that the it will start to number one and it will increment by 
+ The output shows that the it will start to number one and it will increment by 
 #0.2 until it reaches to number 3.
 
 
