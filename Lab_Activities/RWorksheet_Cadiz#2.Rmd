@@ -1,0 +1,154 @@
+---
+title: "Rworksheet_cadiz#2"
+author: "John Dave R. Cadiz"
+date: "2024-09-23"
+output: html_document
+
+**fff** 1. Create a vector using : operator
+```{r}
+# a. Sequence from -5 to 5. Write the R code and its output. Describe its output.
+sequence <- -5:5
+print(sequence)
+
+# The output of this code is from negative five to positive five.
+
+# b. x <- 1:7. What will be the value of x?
+x <- 1:7
+print(x)
+# The value of x are numbers from one to seven.
+
+```
+**fff** 2. Create a vector using seq() function
+```{r}
+# a. seq(1, 3, by = 0.2) # specify step size
+# Write the R Script and its output. Describe the output.
+
+sql <- seq(1, 3, by = 0.2)
+print(sql)
+# The output of this script are the number from 1 going to 3 how ever there is changes from the incrementation instead of increment in one, the incrementation is 0.2 every number.
+```
+**fff** 3. A factory has a census of its workers. There are 50 workers in total. The following list shows their ages: 34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 43, 53, 41, 51, 35, 24, 33, 41, 53, 40, 18, 44, 38, 41, 48, 27, 39, 19, 30, 61, 54, 58, 26, 18.
+```{r}
+ages <- c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29,35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 43, 53, 41, 51, 35, 24, 33, 41, 53, 40, 18, 44, 38, 41, 48, 27, 39, 19, 30, 61, 54, 58, 26, 18)
+
+# a. Access the 3rd element, what is the value
+ages[3]
+# The value of the third element of ages is 22.
+
+# b. Access 2nd and 4th element, what are the values?
+ages[c(2,4)]
+# The value of second and fourht elements are 28 and 36.
+
+# c. Access all but the 4th and 12 element is not included. Write the R script and its output.
+ages[-c(4, 12)]
+
+```
+**fff** 4. Create a vector x <- c("First" = 3, "second" = 0, "third" = 9). Then named the vector, names(x).
+```{r}
+x <- c("first" = 3, "second" = 0, "third" = 9)
+
+# a. Print the results. Then access x[c("first", "third)] Describe the output.
+print(x)
+
+x[c("first", "third")]
+
+# The output of the accessed x[c("first", "third)] are 3 and 9.
+
+# b. Write the code and its output.
+x <- c("first" = 3, "second" = 0, "third" = 9)
+print(x)
+```
+**fff** 5. Create a sequence x from -3:2.
+```{r}
+
+x <- -3:2
+# a. Modify 2nd element and change it to 0;
+  x[2] <- 0
+  print(x)
+  
+  #Describe the output.
+  # The output is range from negative three to positive 2 how ever the second element turns to zero because it change the value to 0.
+
+# b. Write the code and its output.
+x <- -3:2
+print(x)
+```
+**fff** 6. The following data shows the diesel fuel purcse by Mr. Cruz.
+```{r}
+# a. Create a data drame for month, price per liter (php) and purchase-quantity (liter). Write the R scripts and its output.
+
+fuel_data <- data.frame(Month = c("Jan", "Feb", "March", "Apr", "May", "June"), Price_per_Liter_Php =  c(52.50, 57.25, 60.00, 65.00, 74.25, 54.00), Purchaseq = c(25, 30, 50, 40))
+
+print(fuel_data)
+
+# b. What is the average fuel expenditure of Mr. Cruz from Jan to June? Note: Use 'weighted.mean(liter, purchase)'. Write the R scripts and its output.
+Price_per_Liter_Php <- c(52.50, 57.25, 60.00, 65.00)
+Purchaseq <- c(25, 30, 50, 40)
+
+average_expenditure <- weighted.mean(Price_per_Liter_Php, Purchaseq)
+
+print(average_expenditure)
+```
+**fff** 7. R has actually lots of built-in datasets. For example, the rives data "gives the lengths (in miles) of 141 "major" rivers in North America, as compiled by the US Geological Survey".
+```{r}
+# a. Type "rivers: in R console. Create a vector data with 7 elements, containing the number of elements (length) in rivers, their sum (sum), mean (mean), median (median), variance (var), standard deviation (sd), minumum (min) and maximum (max).
+
+data <- c(length(rivers), sum(rivers), mean(rivers), median(rivers), var(rivers), sd(rivers), min(rivers), max(rivers))
+
+print(data)
+
+# b. What are the results?
+# The results shows that 141.0000  83357.0000    591.1844    425.0000 243908.4086    493.8708    135.0000   3710.0000
+
+# c. Write the R scripts and its outputs.
+data <- c(length(rivers), sum(rivers), mean(rivers), median(rivers), var(rivers), sd(rivers), min(rivers), max(rivers))
+
+print(data)
+```
+**fff** 8. The table below gives the 25 most powerful celebrities and their annual pay as ranked by the editions of Forbes magazine and as listed on the Forbes.com website.
+
+```{r}
+#. a. Create vectors according to the above table. Write the R Scripts and its output.
+
+# b. Modify the power ranking and pay og J.K. Rowling. Changes power ranking to 15 and pay to 90. Write the R scripts and its output.
+
+# c. Create an excel file from the tablr above and save it as csv file(PowerRanking). Import the cvs file into the RStudio. What is the R script?
+
+# d. Access the rows 10 to 20 and save it as Ranks.RData. Write the R scripts and its output.
+
+# e. Describe its output. 
+```
+**fff** 9. Download the Hotels-Vienna https://tinyurl.com/Hotels-Vienna
+```{r}
+# a. Import the excel file into your RStudio. What is the R script?
+
+# b. How many dimensions does the dataset have? What is the R script? What is its output?
+
+# c. Select columns country, neighbourhood, price, stars, accomodation_type, and ratings. Write the R script.
+
+# d. Save the data as **new.RData to your RStudio. Write the R script.
+
+# e. Display the first six rows and last six rows of the new.RData. What is the R script?
+```
+**fff** 10. Create a list of ten (10) vegetables you ate during your lifeline. If none, just list down.
+```{r}
+# a. Write the R scripts and its output.
+vegetables <- list("cabbage", "lettuce", "peanuts", "onion", "garlic", "broccoli", "carrot", "potato", "spinach", "egg plant")
+
+print(vegetables)
+
+# b. Add 2 additional vegetables after the last vegetables in the list. What is the R scripts and its output?
+vegetables <- c(vegetables, list("sweet potato", "cauliflower"))
+
+print(vegetables)
+
+# c. Add 4 additional vegetables after index 5. How many datapoints does your vegetables list have? What is the R script and its output?
+vegetables <- c(vegetables, list("peas", "ube", "cucumber", "beans"))
+
+print(vegetables)
+# d. Remove the vegetables in index 5, 10, and 15. How many vegetables were left? Write the codes and its output.
+vegetables <- vegetables[-c(5, 10, 15)]
+
+print(vegetables)
+```
+
