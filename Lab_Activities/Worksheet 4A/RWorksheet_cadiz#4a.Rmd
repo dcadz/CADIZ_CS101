@@ -1,0 +1,6 @@
+---
+title: "Rworksheet_cadiz#4a"
+author: "John Dave R. Cadiz"
+date: "2024-10-21"
+output: pdf_document
+---
