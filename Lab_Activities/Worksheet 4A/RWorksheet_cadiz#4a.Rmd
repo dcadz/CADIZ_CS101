@@ -233,7 +233,6 @@ for (j in 2:5) {
 ```
 ## d. Without using the max function, output as follows for students whose 
 ##highest score gor a semester exceeds 90 points.
-
 # Example output: Annie's highest grade this semester is 95.
 ```{r}
 for (i in 1:nrow(gradesdf)) {
