@@ -281,11 +281,11 @@ load("variations.RData")
 
 par(mfrow = c(1, 2))
 
-blackvar <- alexavar %>% 
+black_kvar <- alexavar %>% 
   filter(`alexafile$variation` %in% c("Black", "BlackDot", "BlackPlus", "BlackShow", "BlackSpot"))
 
 barplot(
-  height = blackvar$n, 
+  height = black_var$n, 
   names.arg = blackvar$`alexafile$variation`, 
   col = c("pink", "magenta", "skyblue", "grey", "purple"),           
   main = "Black Variants",
@@ -294,11 +294,11 @@ barplot(
   las = 2
 )
 
-whitevar <- alexavar %>% 
+white_var <- alexavar %>% 
   filter(`alexafile$variation` %in% c("White", "WhiteDot", "WhitePlus", "WhiteShow", "WhiteSpot"))
 
 barplot(
-  height = whitevar$n,  
+  height = white_var$n,  
   names.arg = whitevar$`alexafile$variation`, 
   col = c("pink", "magenta", "skyblue", "grey", "purple"),              
   main = "White Variants",
