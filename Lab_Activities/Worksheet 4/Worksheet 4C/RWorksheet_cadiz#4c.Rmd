@@ -1,0 +1,10 @@
+---
+title: "RWorksheet_cadiz#4c"
+author: "John Dave R. Cadiz"
+date: "2024-11-03"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
